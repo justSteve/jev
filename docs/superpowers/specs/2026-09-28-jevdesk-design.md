@@ -89,7 +89,7 @@ relative to the HVL and the transition levels to a regime.
 | Jev unreachable or timed out | NEED-INFO ("judgment unavailable"), listing the gates that could not be evaluated. Never a default answer. |
 | Malformed Jev response | Validated like jev-loop's `validate_answers`; treated as unavailable. |
 | Mock client in use | Only when chosen explicitly (`--mock`); labelled on every verdict and log line. |
-| Bad input (stop on the wrong side, a required field missing, a price outside the entered range) | Rejected on the form before anything runs. |
+| Bad input (stop on the wrong side of entry, a required field missing, a non-number where a number is needed, a time not in HH:MM, an instrument with no point value) | Rejected on the form before anything runs. |
 | Profile error (unknown gate, threshold out of [0, 1], missing required value) | The server refuses to start and names the fault. |
 
 ## 7. Profiles, scenarios and privacy
